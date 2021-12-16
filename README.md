@@ -9,6 +9,8 @@
 ## 🧐 About <a name = "about"></a>
 The signup form in HTML and styles in Sass, trying to duplicate Mailchimp SignUp.
 
+![mcform](https://user-images.githubusercontent.com/68464035/146394376-214fb784-3155-4139-a84f-f7ca6be64937.png)
+
 ## 🖇 Requirements <a name="requirements"></a>
 It was asked to do only the structure of the HTML, but for learning I have decided to include Sass for the styles.
 It's made with HTML and Sass.
