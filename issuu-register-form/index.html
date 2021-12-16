@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issuu Register</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="Issuu logo with a circle red." />
+      <p>Already a user?</p>
+      <a href="./sign-in.html">Sign in</a>
+    </header>
+    <hr />
+    <div>
+      <h1>Create an Issuu Account.</h1>
+      <div>
+        <form action="https://google.com">
+            <input type="submit" value="Sign in with Google" />
+        </form>
+        <form action="https://facebook.com">
+            <input type="submit" value="Continue with Facebook" />
+        </form>
+      </div>
+      <p>or with email</p>
+      <form action="POST">
+        <fieldset>
+          <label for="email">Email:</label><br>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          /><br>
+          <label for="pwd">Password</label><br>
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required
+          /><br>
+          <input type="checkbox" name="terms" required />I accept
+          <a href="./terms.html">Terms of Service</a> and the
+          <a href="./professional-terms.html">Professional Terms of Service</a>
+          <br>
+          <button type="submit">Create Account</button>
+        </fieldset>
+      </form>
+    </div>
+    <hr />
+    <footer>
+      <p>Issuu Inc.</p>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./dmca.html">DMCA</a>
+    </footer>
+  </body>
+</html>
