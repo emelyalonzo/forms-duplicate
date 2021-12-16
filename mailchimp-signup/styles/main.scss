@@ -1,0 +1,22 @@
+@import './utilities/mixins';
+@import './utilities/responsive';
+
+@import './block/form';
+@import './block/content';
+
+
+body {
+    @include flexCenter(row, center, center, center, wrap);
+    h1 {
+        font-family: 'Libre Baskerville', serif;
+        @include tablet {
+            font-size: 1.5rem;
+        }
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8rem;
+    }
+
+    
+}
