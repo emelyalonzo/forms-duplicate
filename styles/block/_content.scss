@@ -1,0 +1,29 @@
+.content {
+    @include flexCenter(row, space-evenly, center, center, wrap);
+    @include Container();
+
+    img{
+        margin: 3rem 5rem 0 0;
+        align-self: flex-start;
+        @include tablet {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+    @include mobile {
+        @include flexCenter(column, center, center, center, wrap);
+        max-width: 60vw;
+    }
+    @include tablet {
+        @include flexCenter(column, center, center, center, wrap);
+        max-width: 70vw;
+    }
+    @include desktop {
+        @include flexCenter(row, center, center, center, wrap);
+        max-width: 90vw;
+    }
+    @include large {
+        @include flexCenter(row, center, center, center, wrap);
+        max-width: 90vw;
+    }
+}
